@@ -30,14 +30,19 @@ services:
 - source: /runtime/services/anvil/email.yml
   client_config: {}
   server_config: {}
+- source: /runtime/services/anvil/users.yml
+  client_config: {allow_signup: true, enable_automatically: true, use_email: true,
+    confirm_email: true}
+  server_config: {user_table: users}
 cta: {preset: feedback_form_welcome}
-package_name: Feedback_Form_1
+startup: null
+package_name: My_First_App___________
 allow_embedding: false
-name: Feedback Form 1
+name: My First App!!! :))))))
 runtime_options: {version: 2, server_version: python3-sandbox, client_version: '3',
   server_spec: null}
 metadata: {}
-startup_form: HomeForm
+startup_form: Form1
 db_schema:
   feedback:
     client: none
@@ -56,4 +61,42 @@ db_schema:
       admin_ui: {width: 200, order: 3}
       type: datetime
     title: Feedback
+  visitors:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: author
+      admin_ui: {width: 200, order: 1}
+      type: link_single
+      target: users
+    title: Visitors
+  users:
+    client: none
+    server: full
+    columns:
+    - name: email
+      admin_ui: {order: 0, width: 200}
+      type: string
+    - name: enabled
+      admin_ui: {order: 1, width: 200}
+      type: bool
+    - name: last_login
+      admin_ui: {order: 2, width: 200}
+      type: datetime
+    - name: password_hash
+      admin_ui: {order: 3, width: 200}
+      type: string
+    - name: n_password_failures
+      admin_ui: {order: 4, width: 200}
+      type: number
+    - name: confirmed_email
+      admin_ui: {order: 5, width: 200}
+      type: bool
+    - name: signed_up
+      admin_ui: {order: 6, width: 200}
+      type: datetime
+    title: Users
 renamed: true
