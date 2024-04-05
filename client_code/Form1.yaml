@@ -39,3 +39,7 @@ components:
   properties: {text: 'HELLO, WORLD'}
   type: TextBox
   layout_properties: {slot: title}
+- name: headline_1
+  properties: {role: headline}
+  type: Label
+  layout_properties: {slot: left-nav}
