@@ -31,6 +31,10 @@ components:
     type: Label
     layout_properties: {grid_position: 'IZUIFS,AXIDCO'}
     data_bindings: []
+  - name: canvas_1
+    properties: {height: 100}
+    type: Canvas
+    layout_properties: {grid_position: 'SGWVOY,NNTQBH'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
