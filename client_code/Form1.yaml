@@ -7,16 +7,16 @@ components:
   name: content_panel
   layout_properties: {slot: default}
   components:
+  - name: label_1
+    properties: {text: 'Enter your name: '}
+    type: Label
+    layout_properties: {grid_position: 'IYJHDS,USPCHL'}
+    data_bindings: []
   - name: column_panel_1
     properties: {}
     type: ColumnPanel
     layout_properties: {grid_position: 'IYJHDS,JYNVVC YAGFUX,LJFIRH'}
-    components:
-    - name: label_1
-      properties: {text: 'Enter your name: '}
-      type: Label
-      layout_properties: {grid_position: 'DVUNUO,DDPFEW'}
-      data_bindings: []
+    components: []
   - name: button_1
     properties: {text: yahoo, visible: true}
     type: Button
@@ -26,15 +26,10 @@ components:
     properties: {placeholder: Name}
     type: TextBox
     layout_properties: {grid_position: 'IYJHDS,JYNVVC YAGFUX,QAGMKE'}
-  - name: message_label
-    properties: {align: center, font_size: 35}
-    type: Label
-    layout_properties: {grid_position: 'IZUIFS,AXIDCO'}
-    data_bindings: []
-  - name: youtube_video_1
+  - name: column_panel_2
     properties: {}
-    type: YouTubeVideo
-    layout_properties: {grid_position: 'OPDTMZ,CVSJUR'}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'CNBUEZ,FIZYHC'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
