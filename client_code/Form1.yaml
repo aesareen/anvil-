@@ -31,10 +31,6 @@ components:
     type: Label
     layout_properties: {grid_position: 'IZUIFS,AXIDCO'}
     data_bindings: []
-  - name: youtube_video_1
-    properties: {}
-    type: YouTubeVideo
-    layout_properties: {grid_position: 'OPDTMZ,CVSJUR'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
