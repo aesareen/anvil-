@@ -1,5 +1,5 @@
 is_package: true
 container:
   type: DataRowPanel
-  properties: {visible: true, bold: true}
+  properties: {visible: true, bold: true, italic: false}
 components: []

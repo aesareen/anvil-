@@ -5,17 +5,26 @@ components:
   properties: {visible: true, align: center, content: College Comparison Tool, font: '',
     font_size: 25}
   type: RichText
-  layout_properties: {grid_position: 'IIHVGU,IFUPWJ'}
+  layout_properties: {grid_position: 'IIHVGU,IFUPWJ', row_background: 'theme:Primary
+      500'}
   data_bindings: []
 - name: data_grid_1
   properties:
     columns:
-    - {id: JKSDUP, title: UNC Charlotte, data_key: column_1}
-    - {id: VJQQOR, title: UNC Chapel Hill, data_key: column_2}
-    - {id: OJLQEN, title: NC State, data_key: column_3}
+    - {id: JKSDUP, title: '                  UNC Charlotte', data_key: column_1, width: 269.6666564941406,
+      expand: false}
+    - {id: VJQQOR, title: '                 UNC Chapel Hill', data_key: column_2,
+      expand: false}
+    - {id: OJLQEN, title: '                  NC State', data_key: column_3}
+    border: ''
+    role: primary-color
+    wrap_on: never
   type: DataGrid
   components:
-  - name: repeating_panel_1
-    properties: {item_template: ItemTemplate1.RowTemplate1}
-    type: RepeatingPanel
-  layout_properties: {grid_position: 'ZOGSPJ,OLORPM'}
+  - name: image_1
+    properties: {source: _/theme/college pics.png, display_mode: shrink_to_fit, horizontal_align: center,
+      vertical_align: top, height: 163}
+    type: Image
+    layout_properties: {}
+  layout_properties: {grid_position: 'JBGUMP,INOBUK', full_width_row: true}
+  data_bindings: []
