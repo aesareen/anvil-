@@ -11,35 +11,12 @@ components:
 - name: data_grid_1
   properties:
     columns:
-    - {id: JKSDUP, title: '               UNC Charlotte', data_key: column_1, width: 242.33331298828125,
-      expand: false}
-    - {id: VJQQOR, title: '                UNC Chapel Hill', data_key: column_2, expand: false,
-      width: 258.33331298828125}
-    - {id: OJLQEN, title: '                NC State', data_key: column_3, width: 233,
-      expand: false}
-    border: ''
-    role: primary-color
-    wrap_on: never
-    rows_per_page: 10
+    - {id: JKSDUP, title: UNC Charlotte, data_key: column_1}
+    - {id: VJQQOR, title: UNC Chapel Hill, data_key: column_2}
+    - {id: OJLQEN, title: NC State, data_key: column_3, width: 237, expand: false}
   type: DataGrid
   components:
-  - name: image_1
-    properties: {source: _/theme/college pics.png, display_mode: shrink_to_fit, horizontal_align: center,
-      vertical_align: top, height: 157.33331298828125}
-    type: Image
-    layout_properties: {}
-  - name: data_grid_2
-    properties:
-      columns:
-      - {id: JKSDUP, title: Column 1, data_key: column_1}
-      - {id: VJQQOR, title: Column 2, data_key: column_2, width: 221.6666259765625,
-        expand: false}
-      - {id: OJLQEN, title: Column 3, data_key: column_3}
-    type: DataGrid
-    components:
-    - name: repeating_panel_1
-      properties: {item_template: ItemTemplate1.RowTemplate6}
-      type: RepeatingPanel
-    layout_properties: {slot: footer}
-  layout_properties: {grid_position: 'JBGUMP,INOBUK', full_width_row: false}
-  data_bindings: []
+  - name: repeating_panel_1
+    properties: {item_template: ItemTemplate1.RowTemplate9}
+    type: RepeatingPanel
+  layout_properties: {grid_position: 'MWSSUR,HFHARM'}
