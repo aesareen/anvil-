@@ -26,6 +26,14 @@ components:
     properties: {placeholder: Name}
     type: TextBox
     layout_properties: {grid_position: 'IYJHDS,JYNVVC YAGFUX,QAGMKE'}
+  - name: label_2
+    properties: {text: Company Name, align: center}
+    type: Label
+    layout_properties: {grid_position: 'MYQCVJ,WUHNAH'}
+  - name: image_1
+    properties: {}
+    type: Image
+    layout_properties: {grid_position: 'NYRLUD,JVRWUP'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
@@ -34,3 +42,7 @@ components:
   properties: {text: 'HELLO, WORLD'}
   type: TextBox
   layout_properties: {slot: title}
+- name: column_panel_2
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {slot: left-nav}
