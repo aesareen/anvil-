@@ -1,0 +1,15 @@
+is_package: true
+container: {type: DataRowPanel}
+components:
+- name: image_1
+  properties: {source: _/theme/uncc campus.png}
+  type: Image
+  layout_properties: {column: JKSDUP}
+- name: image_3
+  properties: {source: _/theme/nc state campus.jpg}
+  type: Image
+  layout_properties: {column: OJLQEN}
+- name: image_2
+  properties: {source: _/theme/unc campus.jpg, height: 203.66665649414062}
+  type: Image
+  layout_properties: {column: VJQQOR}

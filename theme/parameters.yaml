@@ -1,36 +1,16 @@
 roles:
-- name: text
-  components: [Label, Link]
-- name: subheading
-  components: [Label]
-- name: input-prompt
-  components: [Label]
-- name: headline
-  components: [Label]
-  displayInToolbox: true
-  title: Headline
-  display_in_toolbox: true
-- name: display-4
-  components: [Label]
-- name: card
-  components: [ColumnPanel, LinearPanel, XYPanel, RepeatingPanel]
-  displayInToolbox: true
-  title: Card
-  display_in_toolbox: true
-- name: raised
-  components: [Button, FileLoader]
-- name: primary-color
-  components: [Button, FileLoader]
-  title: Highlighted Button
-  display_in_toolbox: true
-- name: secondary-color
-  components: [Button, FileLoader]
-- name: dense
-  components: [TextBox]
-- name: selected
-  components: [Link]
-- name: sample-app-info
-  components: [RichText]
+- {name: text, components: null}
+- {name: subheading, components: null}
+- {name: input-prompt, components: null}
+- {name: headline, components: null, displayInToolbox: true, title: Headline, display_in_toolbox: true}
+- {name: display-4, components: null}
+- {name: card, components: null, displayInToolbox: true, title: Card, display_in_toolbox: true}
+- {name: raised, components: null}
+- {name: primary-color, components: null, title: Highlighted Button, display_in_toolbox: true}
+- {name: secondary-color, components: null}
+- {name: dense, components: null}
+- {name: selected, components: null}
+- {name: sample-app-info, components: null}
 color_scheme:
   preset_groups:
   - name: Primary Colour
@@ -166,8 +146,8 @@ color_scheme:
       - {name: Secondary 500, color: '#9E9E9E'}
       - {name: Secondary 700, color: '#616161'}
   colors:
-  - {name: Primary 500, color: '#2196F3'}
-  - {name: Primary 700, color: '#1976D2'}
+  - {name: Primary 500, color: '#009680'}
+  - {name: Primary 700, color: '#00796B'}
   - {name: Secondary 500, color: '#FF9800'}
   - {name: Secondary 700, color: '#F57C00'}
   - {name: White, color: '#FFFFFF'}
@@ -179,3 +159,5 @@ color_scheme:
   - {name: Gray 800, color: '#424242'}
   - {name: Gray 900, color: '#212121'}
   - {name: Black, color: '#000000'}
+  - {name: Light Blue, color: '#87DACC'}
+  - {name: '', color: '#000000'}
