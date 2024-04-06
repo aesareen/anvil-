@@ -42,6 +42,7 @@ components:
   properties: {text: 'HELLO, WORLD'}
   type: TextBox
   layout_properties: {slot: title}
+  event_bindings: {pressed_enter: text_box_1_pressed_enter}
 - name: column_panel_2
   properties: {}
   type: ColumnPanel
