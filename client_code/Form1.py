@@ -16,10 +16,9 @@ class Form1(Form1Template):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.message_label.text = "Hello "  + self.name_box.text + "!"
-    anvil.server.call('say_hello', self.name_box.text)
-    # Replace 'NewPage' with the name of the page you want to navigate to
-    self.open_form('ItemTemplate1')
+    #self.message_label.text = "Hello "  + self.name_box.text + "!"
+    #anvil.server.call('say_hello', self.name_box.text)
+    open_form('ItemTemplate1')
 
   def text_box_1_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
