@@ -12,20 +12,10 @@ components:
     type: Label
     layout_properties: {grid_position: 'IYJHDS,USPCHL'}
     data_bindings: []
-  - name: column_panel_1
-    properties: {}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'IYJHDS,JYNVVC YAGFUX,LJFIRH'}
-    components: []
-  - name: button_1
-    properties: {text: yahoo, visible: true}
-    type: Button
-    layout_properties: {grid_position: 'IYJHDS,INVGTW'}
-    event_bindings: {click: button_1_click}
   - name: name_box
     properties: {placeholder: Name}
     type: TextBox
-    layout_properties: {grid_position: 'IYJHDS,JYNVVC YAGFUX,QAGMKE'}
+    layout_properties: {grid_position: 'IYJHDS,JYNVVC'}
   - name: label_2
     properties: {text: Company Name, align: center}
     type: Label
@@ -38,12 +28,8 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
-- name: text_box_1
-  properties: {text: 'HELLO, WORLD'}
-  type: TextBox
-  layout_properties: {slot: title}
-  event_bindings: {pressed_enter: text_box_1_pressed_enter}
 - name: column_panel_2
   properties: {}
   type: ColumnPanel
   layout_properties: {slot: left-nav}
+  components: []
