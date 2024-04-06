@@ -21,8 +21,7 @@ components:
         tools they need to make informed decisions about higher education. Through
         our user-friendly platform, we offer personalized insights and comprehensive
         resources, ensuring that each user finds the perfect fit for their academic,
-        social, and financial needs."
-
+        social, and financial needs.
 
         ', italic: true, bold: false, align: center}
     type: Label
