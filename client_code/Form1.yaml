@@ -8,7 +8,7 @@ components:
   layout_properties: {slot: default}
   components:
   - name: label_2
-    properties: {text: Company Name, align: center, bold: true}
+    properties: {text: EduMatch, align: center, bold: true}
     type: Label
     layout_properties: {grid_position: 'MYQCVJ,WUHNAH'}
   - name: image_1
@@ -16,12 +16,12 @@ components:
     type: Image
     layout_properties: {grid_position: 'KUUFJJ,VKAYMM'}
   - name: label_1
-    properties: {text: 'At COMPANY NAME, we''re dedicated to simplifying the college
-        planning process. Our mission is to provide students and parents with the
-        tools they need to make informed decisions about higher education. Through
-        our user-friendly platform, we offer personalized insights and comprehensive
-        resources, ensuring that each user finds the perfect fit for their academic,
-        social, and financial needs.
+    properties: {text: 'At EduMatch we''re dedicated to simplifying the college planning
+        process. Our mission is to provide students and parents with the tools they
+        need to make informed decisions about higher education. Through our user-friendly
+        platform, we offer personalized insights and comprehensive resources, ensuring
+        that each user finds the perfect fit for their academic, social, and financial
+        needs.
 
         ', italic: true, bold: false, align: center}
     type: Label
