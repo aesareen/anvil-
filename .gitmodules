@@ -1,0 +1,3 @@
+[submodule "college_comparison"]
+	path = college_comparison
+	url = https://github.com/rssalwekar/college_comparison/tree/93663a63a16e53ac2b2e604e89091e41eda5bc09
