@@ -1,0 +1,3 @@
+[submodule "college_comparison"]
+	path = college_comparison
+	url = https://github.com/rssalwekar/college_comparison
