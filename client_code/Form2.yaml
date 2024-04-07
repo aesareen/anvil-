@@ -1,0 +1,87 @@
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - name: data_grid_1
+    properties:
+      columns:
+      - {id: JKSDUP, title: '             UNC Charlotte', data_key: column_1, expand: false}
+      - {id: VJQQOR, title: '             UNC Chapel Hill', data_key: column_2}
+      - {id: OJLQEN, title: '                NC State', data_key: column_3}
+    type: DataGrid
+    components:
+    - name: data_row_panel_1
+      properties: {}
+      type: DataRowPanel
+      components:
+      - name: image_1
+        properties: {source: _/theme/uncc campus.png, display_mode: zoom_to_fill}
+        type: Image
+        layout_properties: {column: JKSDUP}
+      - name: image_2
+        properties: {source: _/theme/new unc.png, display_mode: zoom_to_fill}
+        type: Image
+        layout_properties: {column: VJQQOR}
+      - name: image_3
+        properties: {source: _/theme/NC STATE.jpg, display_mode: zoom_to_fill}
+        type: Image
+        layout_properties: {column: OJLQEN}
+      - name: data_row_panel_2
+        properties: {background: 'theme:Gray 300'}
+        type: DataRowPanel
+        layout_properties: {}
+        components:
+        - name: label_1
+          properties: {align: center, text: '#6 in Top Public Universities in NC',
+            bold: true, italic: true}
+          type: Label
+          layout_properties: {column: JKSDUP}
+        - name: label_2
+          properties: {align: center, bold: true, italic: true, text: '#7 in Top Public
+              Universities in America'}
+          type: Label
+          layout_properties: {column: VJQQOR}
+        - name: label_3
+          properties: {text: '#2 in Top Public Universities in NC', bold: true, italic: true,
+            align: center}
+          type: Label
+          layout_properties: {column: OJLQEN}
+      - name: data_row_panel_3
+        properties: {background: 'theme:Primary 500'}
+        type: DataRowPanel
+        layout_properties: {}
+      - name: data_row_panel_4
+        properties: {background: 'theme:Gray 300'}
+        type: DataRowPanel
+        layout_properties: {}
+    layout_properties: {grid_position: 'UTICTD,MSFKSD'}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+- name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {slot: left-nav}
+  components:
+  - name: button_1
+    properties: {text: HOME}
+    type: Button
+    layout_properties: {grid_position: 'GBCBQO,MOCTQL'}
+    event_bindings: {click: button_1_click}
+  - name: button_2
+    properties: {text: COMPARE}
+    type: Button
+    layout_properties: {grid_position: 'VSSSOD,ASIBMW'}
+    event_bindings: {click: button_2_click}
+- name: button_3
+  properties: {text: EduMatch, background: 'theme:Light Blue', foreground: 'theme:White',
+    role: headline}
+  type: Button
+  layout_properties: {slot: title}
+  event_bindings: {click: button_3_click}
