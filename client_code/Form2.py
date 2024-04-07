@@ -13,7 +13,13 @@ class Form2(Form2Template):
     self.init_components(**properties)
 
     # Any code you write here will run when the form opens.
+<<<<<<< HEAD
     with open("json")
+=======
+    f = open("_/theme/json_files/ratings_North%20Carolina%20State%20University.json")
+    content = json.load(f)
+    print()
+>>>>>>> a2e8e1ca8847fcb102118dac07abae021c2eada5
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
