@@ -14,20 +14,20 @@ class Form1(Form1Template):
     # Any code you write here will run when the form opens.
     anvil.users.login_with_form()
 
-  def button_1_click(self, **event_args):
+  def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     #self.message_label.text = "Hello "  + self.name_box.text + "!"
     #anvil.server.call('say_hello', self.name_box.text)
-    open_form('Form1')
+    open_form('Form2')
 
   def text_box_1_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
 
-  def button_2_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('Form2')
-
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form("Form1")
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Form1')
