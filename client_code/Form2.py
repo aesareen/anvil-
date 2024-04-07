@@ -5,6 +5,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+import json
 
 class Form2(Form2Template):
   def __init__(self, **properties):
@@ -12,6 +13,7 @@ class Form2(Form2Template):
     self.init_components(**properties)
 
     # Any code you write here will run when the form opens.
+    with open("json")
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
