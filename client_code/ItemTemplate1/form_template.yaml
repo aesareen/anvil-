@@ -19,9 +19,16 @@ components:
   layout_properties: {grid_position: 'XGQUJT,EUGOZJ'}
   components:
   - name: button_1
+<<<<<<< HEAD
     properties: {text: button_1}
     type: Button
     layout_properties: {grid_position: 'PCVLBK,UCBUDN'}
+=======
+    properties: {text: HOME}
+    type: Button
+    layout_properties: {grid_position: 'PCVLBK,UCBUDN'}
+    event_bindings: {click: button_1_click}
+>>>>>>> 0cee9dc7ccadaede2de854e0a60040d1f46263a3
 - name: data_grid_1
   properties:
     columns:
